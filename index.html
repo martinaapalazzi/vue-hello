@@ -13,6 +13,9 @@
 
     <div id="app">
         <h1>{{ message }}</h1>
+        <div>
+            <img src="grinch.jpeg" alt="">
+        </div>
     </div>
 
     <script>
@@ -21,7 +24,8 @@
         createApp({
             data() {
                 return {
-                    message: 'Buone feste!'
+                    message: 'Buone feste!',
+                    src: "grinc.jpg"
                 }
             }
         }).mount('#app')
