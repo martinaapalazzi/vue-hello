@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Vue Hello</title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
 
     <div id="app">
-        <h1> {{ message }} </h1>
+        <h1>{{ message }}</h1>
     </div>
 
     <script>
         const { createApp } = Vue
 
         createApp({
-            setup() {
-                const message = ref('Hello vue!')
+            data() {
                 return {
-                    message: "Buone vacanze!"
+                    message: 'Buone feste!'
                 }
             }
         }).mount('#app')
-
     </script>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
