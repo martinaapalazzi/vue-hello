@@ -4,7 +4,7 @@ const { createApp } = Vue
         data() {
             return {
                 message: 'Buone feste!',
-                src: "grinc.jpg"
+                image: "grinch.jpeg",
             }
         }
     }).mount('#app')
